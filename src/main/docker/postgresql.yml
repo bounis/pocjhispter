@@ -1,0 +1,11 @@
+version: '2'
+services:
+    pocjhipster-postgresql:
+        image: postgres:10.4
+        # volumes:
+        #     - ~/volumes/jhipster/pocjhipster/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=pocjhipster
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
